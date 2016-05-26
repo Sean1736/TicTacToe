@@ -10,17 +10,17 @@
 
 @interface ViewController ()
 
-/*
-@property (weak, nonatomic) IBOutlet UIButton *buttonOne;
-@property (weak, nonatomic) IBOutlet UIButton *buttonTwo;
-@property (weak, nonatomic) IBOutlet UIButton *buttonThree;
-@property (weak, nonatomic) IBOutlet UIButton *buttonFour;
-@property (weak, nonatomic) IBOutlet UIButton *buttonFive;
-@property (weak, nonatomic) IBOutlet UIButton *buttonSix;
-@property (weak, nonatomic) IBOutlet UIButton *buttonSeven;
-@property (weak, nonatomic) IBOutlet UIButton *buttonEight;
-@property (weak, nonatomic) IBOutlet UIButton *buttonNine;
-*/
+
+//@property (weak, nonatomic) IBOutlet UIButton *buttonOne;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonTwo;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonThree;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonFour;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonFive;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonSix;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonSeven;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonEight;
+//@property (weak, nonatomic) IBOutlet UIButton *buttonNine;
+
 
 /*
 This property is the result box that tells us who's turn it is.
@@ -33,6 +33,8 @@ This property is the result box that tells us who's turn it is.
 
 // isX is a bool property which determines if the box is x or not.
 @property BOOL isX;
+@property BOOL shouldSave;
+
 
 @end
 
@@ -45,27 +47,44 @@ This property is the result box that tells us who's turn it is.
             [button setTitle:self.whichPlayerLabel.text forState:UIControlStateNormal];
         }
     }
-    [self mamboDogfaceBananaPatch];
+    
+    UIButton *buttonThatwasPressed = (UIButton *) sender;
+    buttonThatwasPressed.enabled = NO;
+   
+    [self showCurrentPlayer];
   
-//    buttonOne.titleLabel.text = [NSString stringWithFormat:@"X"];
-    
 
-    
 }
+
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.isX = true;
-    [self mamboDogfaceBananaPatch];
+    [self showCurrentPlayer];
 }
 
--(void)mamboDogfaceBananaPatch{
+
+-(void)showCurrentPlayer{
     self.isX = !self.isX;
     if (self.isX) {
         self.whichPlayerLabel.text = @"X";
     } else {
         self.whichPlayerLabel.text = @"0";
     }
+}
+
+- (void)saveCurrentPosition {
+    
+    
+//    self.shouldSave = [NSString stringWithFormat:@"X"];
+    if (self.shouldSave) {
+        self.whichPlayerLabel.text = @"X";
+    } else {
+        self.whichPlayerLabel.text = @"0";
+    }
+    
 }
 
 

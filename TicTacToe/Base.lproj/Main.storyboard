@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="btv-Ob-QCh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="btv-Ob-QCh">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -91,15 +91,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="BQ0-DF-PeP"/>
                     <connections>
-                        <outlet property="buttonEight" destination="B4K-HO-ihg" id="o2S-Uq-ohj"/>
-                        <outlet property="buttonFive" destination="uMx-zY-02l" id="RPL-BC-OZI"/>
-                        <outlet property="buttonFour" destination="82H-a3-GpY" id="pTx-ur-oy1"/>
-                        <outlet property="buttonNine" destination="mZe-kc-L6u" id="94F-c4-bD8"/>
-                        <outlet property="buttonOne" destination="kZB-fV-ZUH" id="VdN-Xy-ddh"/>
-                        <outlet property="buttonSeven" destination="BlV-qD-R7N" id="6To-bK-d3g"/>
-                        <outlet property="buttonSix" destination="aEs-VN-Lrf" id="6Hd-fP-eve"/>
-                        <outlet property="buttonThree" destination="tii-Oe-s0A" id="Sqv-Io-GBl"/>
-                        <outlet property="buttonTwo" destination="ScL-uh-Kzp" id="BtF-mb-O3z"/>
                         <outlet property="whichPlayerLabel" destination="5Js-32-h28" id="glt-CO-PuI"/>
                         <outletCollection property="buttons" destination="kZB-fV-ZUH" id="Lt2-Wt-utN"/>
                         <outletCollection property="buttons" destination="ScL-uh-Kzp" id="uMf-NX-n5K"/>
